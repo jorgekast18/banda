@@ -17,6 +17,6 @@ module.exports = {
             console.log('El registro se ha guardado con éxito')
         })
         
-        res.send('The data was saved')
+        res.send('La información ha sido guardada con éxito')
     }
 }
