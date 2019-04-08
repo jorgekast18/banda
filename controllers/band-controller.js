@@ -7,9 +7,9 @@ module.exports = {
     // Save data that the band send 
     saveData: function saveData(req, res){ 
         var dataBand = new Band({
-            position: '90',
-            speed: '10 m/s',
-            hourChange: '11:00 p.m.'
+            position: req.body.position,
+            speed: req.body.speed,
+            hourChange: req.body.hourChange
         })
 
         dataBand.save(function(err, data){

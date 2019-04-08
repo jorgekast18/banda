@@ -10,7 +10,7 @@ var BandController = require('../controllers/band-controller.js');
 var api = express.Router();
 
 // Create route for save data of banda
-api.get('/banda', BandController.saveData);
+api.post('/banda', BandController.saveData);
 
 // Export module api
 module.exports = api;
